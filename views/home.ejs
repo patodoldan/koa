@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			<%= title %>
+		</title>
+		<style>
+			*{
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			<%= title %>
+		</h1>
+		<ul>
+			<% for (const key in data) { %>
+				<li><a href="<%= data[key] %>"><%= key %></a></li>
+			<% } %>
+		</ul>
+	</body>
+</html>

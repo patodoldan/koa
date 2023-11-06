@@ -1,0 +1,11 @@
+{
+    "extends": "@tsconfig/node-lts/tsconfig.json",
+    "compilerOptions": {
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    "include": ["src", "app.ts"],
+    "exclude": ["node_modules"],
+    "noImplicitAny": false
+}
